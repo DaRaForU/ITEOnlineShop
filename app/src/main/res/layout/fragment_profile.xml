@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtMyProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_profile"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMyProfile"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="100dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/camera_colored"
+                android:scaleType="centerCrop"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first"
+        app:layout_constraintStart_toEndOf="@id/cardProfile"
+        app:layout_constraintTop_toTopOf="@id/cardProfile"
+        app:layout_constraintBottom_toTopOf="@id/txtEmail"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/txtFirstName"
+        app:layout_constraintTop_toTopOf="@id/txtFirstName"
+        android:text="last"
+        android:layout_marginStart="4dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        app:layout_constraintStart_toStartOf="@id/txtFirstName"
+        app:layout_constraintBottom_toBottomOf="@id/cardProfile"
+        app:layout_constraintTop_toBottomOf="@id/txtFirstName"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEdit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardProfile"
+        app:layout_constraintBottom_toBottomOf="@id/cardProfile"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="100dp"
+        android:backgroundTint="@color/base_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageEdit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/edit_colored"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardProfile"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        />
+
+    <TextView
+        android:id="@+id/txtBaseEmail"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="email@abc.com"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/txtEmail2"
+        app:layout_constraintEnd_toEndOf="@id/cardEdit"
+        app:layout_constraintTop_toTopOf="@id/txtEmail2"
+        app:layout_constraintBottom_toBottomOf="@id/txtEmail2"
+        android:background="@drawable/bg_card"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tel:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtEmail2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/txtBasePhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="000 000 000"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/txtBaseEmail"
+        app:layout_constraintEnd_toEndOf="@id/cardEdit"
+        app:layout_constraintTop_toTopOf="@id/txtPhoneNumber"
+        app:layout_constraintBottom_toBottomOf="@id/txtPhoneNumber"
+        android:background="@drawable/bg_card" />
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPhoneNumber"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/txtBaseGender"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Male"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/txtBaseEmail"
+        app:layout_constraintEnd_toEndOf="@id/cardEdit"
+        app:layout_constraintTop_toTopOf="@id/txtGender"
+        app:layout_constraintBottom_toBottomOf="@id/txtGender"
+        android:background="@drawable/bg_card" />
+
+    <TextView
+        android:id="@+id/txtBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGender"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/txtBaseBirthday"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="DD-MM_YYYY"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/txtBaseEmail"
+        app:layout_constraintEnd_toEndOf="@id/cardEdit"
+        app:layout_constraintTop_toTopOf="@id/txtBirthday"
+        app:layout_constraintBottom_toBottomOf="@id/txtBirthday"
+        android:background="@drawable/bg_card" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBirthday"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/txtBaseAddress"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="Address"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/txtAddress"
+        app:layout_constraintEnd_toEndOf="@id/cardEdit"
+        app:layout_constraintTop_toBottomOf="@id/txtAddress"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_card_address" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

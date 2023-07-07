@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/home_colored"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/menuProduct"
+        android:icon="@drawable/product_colored"
+        android:title="@string/product"/>
+
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/profile_colored"
+        android:title="@string/profile"/>
+
+    <item
+        android:id="@+id/menuMore"
+        android:icon="@drawable/more_colored"
+        android:title="@string/more"/>
+</menu>

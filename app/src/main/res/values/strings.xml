@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ITE Online Shop</string>
+
+<!--    activity_home-->
+    <string name="home">Home</string>
+    <string name="get_start">Get Start</string>
+<!--    activity_product-->
+    <string name="products">Products</string>
+    <string name="product">Product</string>
+    <string name="search_products">Search products</string>
+
+<!--    activity_profile-->
+    <string name="profile">Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="email_abc_com">email@abc.com</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="zero">000 000 000</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="birthday">Birthday</string>
+    <string name="dd_mm_yyyy">DD-MM-YYYY</string>
+    <string name="address">Address</string>
+<!--    activity_more-->
+    <string name="more">More</string>
+    <string name="notification">Notification</string>
+    <string name="privacy">Privacy</string>
+    <string name="language">Language</string>
+    <string name="ask_question">Ask Question</string>
+    <string name="about_us">About Us</string>
+
+</resources>
